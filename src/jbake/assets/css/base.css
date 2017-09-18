@@ -4,6 +4,8 @@
 html,
 body {
   height: 100%;
+  margin:0%;
+  padding: 0%;
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -26,8 +28,16 @@ body {
   padding: 0;
 }
 
+#contents {
+border: 1px solid #FFFFFF;
+width: 800px;
+float: left;
+padding: 50px;
+}
+
+
 /* Lastly, apply responsive CSS fixes as necessary */
-@media (max-width: 767px) {
+@media (max-width> 767px) {
   #footer {
     margin-left: -20px;
     margin-right: -20px;
@@ -47,6 +57,13 @@ body {
   margin: 20px 0;
 }
 
+.ul{list-style:none; margin:0px; padding:0px; border:1px solid #D5D5D5;}
+.dropdown{float:left;}
+.dropdown > li{float:left;}
+.dropdown ul{display:none;}
+.dropdown li:hover > ul {display:block;}
+.dropdown-menu { position:absolute; left:90px; top: 29px; }
+.dropdown-submenu { position:absolute; left:90px; top: 60px; }
 /*code {
   font-size: 80%;
 }*/
